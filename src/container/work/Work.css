@@ -1,0 +1,14 @@
+.work-list {
+  /* margin-top: 5rem; */
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  /* padding: 2rem 0; */
+}
+
+.work-list::-webkit-scrollbar {
+  width: 0;
+}

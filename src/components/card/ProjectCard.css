@@ -1,0 +1,54 @@
+.card {
+  padding: 1rem;
+  min-width: 35rem;
+  height: 38rem;
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.3s ease-in-out;
+  scroll-snap-align: start;
+}
+
+.card-img-container > img {
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  position: relative;
+  height: 100%;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: var(--hover-color);
+}
+.project-desc {
+  font-size: 1.5rem;
+  color: var(--hover-color);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+
+.link {
+  font-size: 3.2rem;
+  color: var(--hover-color);
+}
+.card-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

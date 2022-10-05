@@ -1,0 +1,19 @@
+.app-container {
+  width: 80%;
+  min-height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+
+  position: relative;
+  top: 9rem;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}

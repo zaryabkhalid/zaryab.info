@@ -1,0 +1,7 @@
+.footer__container {
+  color: var(--white-color);
+  height: 100%;
+  text-align: center;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+  margin-top: 5rem;
+}

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  /* border: 1px solid var(--secondary-color); */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  color: var(--secondary-color);
+  font-size: clamp(3.2rem, 10vw, 8rem);
+  text-align: center;
+  padding: 1.5rem 0;
+  text-shadow: 0 5px 2px var(--black-color);
+}
+
+.childrens {
+  margin-top: 5rem;
+}

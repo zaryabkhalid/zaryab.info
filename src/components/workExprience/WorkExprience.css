@@ -1,0 +1,19 @@
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid var(--hover-color);
+  padding-bottom: 1rem;
+}
+
+.exp {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--hover-color);
+}
+.company {
+  font-weight: 800;
+}
+.name {
+  font-weight: 500;
+}

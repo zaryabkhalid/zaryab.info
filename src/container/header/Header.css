@@ -1,0 +1,117 @@
+.header__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header__name {
+  position: relative;
+  font-size: clamp(3rem, 10vw, 10rem);
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.header__name::before {
+  content: "Hi, my name is";
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white-color);
+  background: var(--secondary-color);
+  padding: 2px 10px;
+  border-radius: 30px;
+  top: -2rem;
+}
+.header__profession {
+  font-size: clamp(3rem, 10vw, 10rem);
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--background-color);
+  z-index: 200;
+}
+
+.header__profession_intro {
+  color: var(--white-color);
+  letter-spacing: 1px;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+.btn-container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 200;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  background: transparent;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.bg-header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+.bg-header-img > img {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid white; */
+    z-index: 10;
+  }
+
+  .social-icons a {
+    padding: 1rem;
+    font-size: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social-icons a:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+  }
+}
