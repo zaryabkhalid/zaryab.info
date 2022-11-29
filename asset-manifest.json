@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zaryab.info/static/css/main.ae4e4bad.css",
+    "main.js": "/zaryab.info/static/js/main.6dc47168.js",
+    "static/media/bg-header.png": "/zaryab.info/static/media/bg-header.00bcab35503da85548e9.png",
+    "static/media/contact.png": "/zaryab.info/static/media/contact.391a0d178edd98f9da30.png",
+    "index.html": "/zaryab.info/index.html",
+    "main.ae4e4bad.css.map": "/zaryab.info/static/css/main.ae4e4bad.css.map",
+    "main.6dc47168.js.map": "/zaryab.info/static/js/main.6dc47168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae4e4bad.css",
+    "static/js/main.6dc47168.js"
+  ]
+}
