@@ -32,27 +32,29 @@ const Skills = () => {
           <div className="skills-main">
             {/* Skills */}
             <div className="skills-list">
-              {skills.map((skill) => (
-                <SkillImage key={skill._id} skill={skill} />
-              ))}
+              {skills?.map((skill) => {
+                return (
+                  <div key={skill._id}>
+                    <SkillImage skill={skill} />
+                  </div>
+                )
+              })}
             </div>
 
             {/* Experience */}
 
             <div className="exprience-list">
-              {experiences.map((exp) => {
+              {experiences?.map((exp, index) => {
                 return (
-                  <>
-                    <h4 key={exp._id} className="exp-year">
-                      {exp.year}
-                    </h4>
+                  <div key={index}>
+                    <p className="exp-year">{exp.year}</p>
 
                     <div>
-                      {exp.works.map((work) => (
-                        <WorkExprience key={work._id} work={work} />
+                      {exp.works?.map((work, index) => (
+                        <WorkExprience key={index} work={work} />
                       ))}
                     </div>
-                  </>
+                  </div>
                 )
               })}
             </div>

@@ -2,15 +2,15 @@ import React from "react"
 import "./SkillImage.css"
 import { urlFor } from "../../client"
 
-const SkillImage = ({ skill }) => {
+const SkillImage = (props) => {
   return (
     <>
-      <div className="skill-item" key={skill._id}>
-        <div className="skill-img" style={{ background: skill.bgColor }}>
-          <img src={urlFor(skill.icon)} alt={skill.name} />
+      <div className="skill-item">
+        <div className="skill-img" style={{ background: props.skill.bgColor }}>
+          <img src={urlFor(props.skill.icon)} alt={props.skill.name} />
         </div>
         <p className="p-text" style={{ textAlign: "center" }}>
-          {skill.name}
+          {props.skill.name}
         </p>
       </div>
     </>

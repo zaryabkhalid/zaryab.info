@@ -1,4 +1,3 @@
-import React from "react"
 import "./ProjectCard.css"
 import { urlFor } from "../../client"
 import { AiFillGithub } from "react-icons/ai"
@@ -8,9 +7,9 @@ const ProjectCard = ({ project }) => {
   const truncate = (str, n) => {
     return str.length > n ? str.substr(0, n - 1) + "..." : str
   }
-
   return (
     <>
+      s
       <div className="card">
         <div className="card-img-container" data-tootip={project.title}>
           <img src={urlFor(project.imgUrl)} alt={project.title} />
@@ -18,21 +17,6 @@ const ProjectCard = ({ project }) => {
 
         <div className="card-body">
           <h2 className="project-title">{project.title}</h2>
-          <div className="tags">
-            {project.tags.map((tag) => {
-              return (
-                <>
-                  <p
-                    style={{
-                      padding: "0 5px 0 0",
-                    }}
-                  >
-                    {tag}
-                  </p>
-                </>
-              )
-            })}
-          </div>
           <p className="project-desc">{truncate(project.description, 40)}</p>
           <div className="card-footer">
             <div className="card-links">

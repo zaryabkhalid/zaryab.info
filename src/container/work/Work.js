@@ -23,11 +23,11 @@ const Work = () => {
         <AppContainer>
           <Wrap heading="Projects">
             <div className="work-list">
-              {projects.map((project) => {
+              {projects?.map((project) => {
                 return (
-                  <>
-                    <ProjectCard key={project._id} project={project} />
-                  </>
+                  <div key={project._id}>
+                    <ProjectCard project={project} />
+                  </div>
                 )
               })}
             </div>

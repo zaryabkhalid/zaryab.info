@@ -22,10 +22,7 @@ const Header = () => {
                   libraries and frameworks.
                 </p>
                 <div className="btn-container">
-                  <a
-                    href="ZaryabKhalid SEP2022.pdf"
-                    download="ZaryabKhalid SEP2022.pdf"
-                  >
+                  <a href="Resume.pdf" download="Resume.pdf">
                     <button className="btn" type="button">
                       Resume
                     </button>
